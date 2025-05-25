@@ -3,10 +3,31 @@ document.addEventListener('DOMContentLoaded', function() {
     AOS.init({
         duration: 1000,
         easing: 'ease-in-out',
-        once: true,
+        once: false,
         mirror: false
         
     });
+
+    const text = document.getElementById('animated-text');
+    const content = text.textContent;
+    text.innerHTML = '';
+
+    content.split('').forEach((char, index) => {
+        const span = document.createElement('span');
+        
+        if (char === ' ') {
+            span.className = 'space';
+            span.innerHTML = '&nbsp;';
+        } else {
+            span.textContent = char;
+            span.className = 'letter';
+            span.style.animationDelay = `${index * 0.06}s`;
+        }
+        
+        text.appendChild(span);
+    });
+
+
     
 
     // Mobile Navigation Toggle

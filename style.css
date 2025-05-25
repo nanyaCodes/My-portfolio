@@ -261,6 +261,26 @@ img {
     align-items: center;
 }
 
+.letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(60px);
+    animation: dropIn 1s ease-out forwards;
+}
+
+.space {
+    display: inline-block;
+    width: 0.25em;
+}
+
+@keyframes dropIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 .about-image img {
     border-radius: 40rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -444,7 +464,6 @@ img {
 
 .project-card {
     background-color: var(--text-color);
-    border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 8px 8px rgba(83, 62, 137, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -817,6 +836,10 @@ img {
 
     .project-card{
         margin-top: 10px;
+    }
+
+    .project-links a{
+        justify-content: center;
     }
 
     .info-item {
