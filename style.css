@@ -835,6 +835,10 @@ img {
         max-width: 100%;
         margin: 0 auto;
     }
+    .primary-btn{
+        font-size: 8px;
+        padding: 9px 9px;
+    }
 
     .highlight{
         font-size: 35px;
