@@ -796,7 +796,6 @@ img {
     }
 
     .nav-links {
-        
         background-color: #080808;
         color: #5D62DF;
         position: fixed;
@@ -839,13 +838,17 @@ img {
     }
 
     .highlight{
-        font-size: 21px;
+        font-size: 35px;
         font-weight: 700;
     }
 
     .hero-content h1 {
-        font-size: 1rem;
+        font-size: 4rem;
         
+    }
+    .view{
+        font-size: 8px;
+        padding: 3px 10px;
     }
 
     .hero-content h2 {
@@ -885,6 +888,8 @@ img {
 
     .project-links a{
         justify-content: center;
+        align-items: center;
+        padding-left: 5px;
     }
 
     .info-item {
