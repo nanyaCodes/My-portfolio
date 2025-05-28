@@ -796,7 +796,7 @@ img {
     }
 
     .nav-links {
-        background-color: #080808;
+        background-color: #080707;
         color: #5D62DF;
         position: fixed;
         top: 50px;
@@ -804,8 +804,7 @@ img {
         height: 100vh;
         width: 240px;
         z-index: 99;
-        background-color: rgba(4, 4, 4, 0.2);
-        backdrop-filter: blur(50px);
+        backdrop-filter: blur(10px);
         box-shadow: -10px 0 10px rgba(0,0,0,0.1);
         display: flex;
         flex-direction: column;
