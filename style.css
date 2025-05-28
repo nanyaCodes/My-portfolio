@@ -842,13 +842,9 @@ img {
         font-weight: 700;
     }
 
-    .hero-content h1 {
-        font-size: 4rem;
-        
-    }
     .view{
         font-size: 8px;
-        padding: 7px 8px;
+        padding: 7px 9px;
     }
 
     .hero-content h2 {
