@@ -316,6 +316,33 @@ img {
     color: var(--text-color);
 }
 
+.name-with-wave {
+    white-space: nowrap;
+}
+
+.mobile-break {
+    display: none;
+}
+
+
+.wave {
+    display: inline-block;
+    animation: wave-animation 6s ease-in-out infinite;
+    transform-origin: 90% 90%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
 /* ===== SKILLS SECTION ===== */
 /* Skills section styling */
 .skills-container {
@@ -632,6 +659,17 @@ img {
     margin-bottom: var(--mb-3);
 }
 
+.info-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+    color: #5D62DF;
+}
+
+
 .contact-form input,
 .contact-form textarea {
     background-color: var(--text-color);
@@ -779,7 +817,8 @@ img {
 
     .nav-links a{
         color: #5D62DF;
-        font-size: 17px;
+        font-size: 20px;
+        margin-top: 20px;
     }
 
     .nav-links.active {
@@ -789,6 +828,7 @@ img {
 
     .nav-links li {
         margin: 1rem 0;
+        margin-top: 20px;
     }
 
     .hero-content {
@@ -798,9 +838,14 @@ img {
         margin: 0 auto;
     }
 
+    .highlight{
+        font-size: 21px;
+        font-weight: 700;
+    }
+
     .hero-content h1 {
-        font-size: 4rem;
-        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        
     }
 
     .hero-content h2 {
@@ -809,7 +854,7 @@ img {
     }
 
     .hero-content p {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
         margin-bottom: 2rem;
     }
 
@@ -850,7 +895,7 @@ img {
     }
   
    .info-item i {
-        margin-right: 0;
+        align-items: center;
         margin-bottom: 0.75rem;
         font-size: 2rem;
     }
@@ -862,18 +907,19 @@ img {
         align-items: center;
     }
     
-    .info-item h4 {
-        margin-bottom: 0.5rem;
-    }
-    
     .info-item p {
      font-size: 0.95rem;
+     margin-right: 35px;
     } 
 
-   .contact-info h3, p{
+   .contact-info h3{
         margin: 0 auto;
         display: table;
         margin-top: 10px;
+    }
+
+    .contact-info p{
+        margin-left: 30px;
     }
 
     .social-links{
@@ -899,7 +945,7 @@ img {
         font-size: 1.5rem;
     }
     .hero-content p{
-        font-size: 1rem;
+        font-size: 1.15rem;
     }
     .about-text, .btn{
         margin: 0 auto;
